@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SellingCustomCardApplication</string>
+    <string name="app_logo_description">SellingCustomCardApplication</string>
+    <string name="cardtext">This is a sample birthday card.</string>
+    <string name="babyboy">Congrats for a baby boy:)</string>
+    <string name="babygirl">Congrats for a baby girl:)</string>
+    <string name="birthday_text">Birthday</string>
+    <string name="wedding_text">Wedding</string>
+    <string name="graduation_text">Graduation</string>
+    <string name="baby_text">Baby</string>
+    <string name="wedding_greet">Happy Wedding :)</string>
+    <string name="birthday_greet">Happy Birthday :)</string>
+    <string name="display_price">Display Price</string>
+    <string name="confirm_order">Confirm order</string>
+    <string name="final_message">Happy %1$s to %2$s! Enjoy our %3$s card, made with love!!</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="happy_graduation">Happy Graduation :)</string>
+    <string name="card_for_her">Card for her</string>
+    <string name="card_for_him">Card for him</string>
+
+AcriActivityGraduation
+</resources>

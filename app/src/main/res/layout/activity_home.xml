@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:padding="16dp"
+            tools:context=".HomeActivity">
+
+            <!-- First row of the grid -->
+            <LinearLayout
+                android:id="@+id/firstRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Occasion 1 -->
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewOccasion1"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:src="@drawable/birthday" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonOccasion1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/birthday_text" />
+
+                </RadioGroup>
+
+                <!-- Occasion 2 -->
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewOccasion2"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:src="@drawable/wedding" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonOccasion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wedding_text" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <!-- Second row of the grid -->
+            <LinearLayout
+                android:id="@+id/secondRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstRow"
+                android:orientation="horizontal">
+
+                <!-- Occasion 3 -->
+                <RadioGroup
+                    android:id="@+id/radioGroup3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewOccasion3"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:src="@drawable/graduation" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonOccasion3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/graduation_text" />
+
+                </RadioGroup>
+
+                <!-- Occasion 4 -->
+                <RadioGroup
+                    android:id="@+id/radioGroup4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewOccasion4"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:src="@drawable/baby" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonOccasion4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/baby_text" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <!-- Text box for custom name entry -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondRow"
+                android:hint="@string/enter_name"
+                android:layout_marginTop="20dp" />
+
+            <!-- Drop down menu for card size -->
+            <Spinner
+                android:id="@+id/spinnerCardSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextName"
+                android:layout_marginTop="20dp"
+                android:entries="@array/card_sizes" />
+
+            <!-- Checkbox to confirm order -->
+            <CheckBox
+                android:id="@+id/checkBoxConfirmOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerCardSize"
+                android:text="@string/confirm_order" />
+
+            <!-- Button to display the price -->
+            <Button
+                android:id="@+id/buttonDisplayPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkBoxConfirmOrder"
+                android:layout_centerHorizontal="true"
+                android:text="@string/display_price" />
+
+            <!-- Hidden text to show final message -->
+            <TextView
+                android:id="@+id/textViewFinalMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonDisplayPrice"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <!-- NavigationView for displaying navigation menu -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

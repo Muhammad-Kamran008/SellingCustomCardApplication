@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SellingCustomCardApplication</string>
+    <string name="app_logo_description">تطبيق بيع بطاقات مخصصة</string>
+    <string name="cardtext">هذه بطاقة عيد ميلاد عينية.</string>
+    <string name="babyboy">تهانينا على ولادة صبي :) </string>
+    <string name="babygirl">تهانينا على ولادة فتاة :) </string>
+    <string name="birthday_text">عيد ميلاد</string>
+    <string name="wedding_text">حفل زفاف</string>
+    <string name="graduation_text">تخرج</string>
+    <string name="baby_text">طفل</string>
+    <string name="wedding_greet">عيد زفاف سعيد :)</string>
+    <string name="birthday_greet">عيد ميلاد سعيد :)</string>
+    <string name="display_price">عرض السعر</string>
+    <string name="confirm_order">تأكيد الطلب</string>
+    <string name="final_message">عيد ميلاد سعيد ل %1$s! استمتع ببطاقتنا %3$s، المصنوعة بحب!!</string>
+    <string name="enter_name">أدخل اسمك</string>
+    <string name="card_for_her">بطاقة لها</string>
+    <string name="card_for_him">بطاقة له</string>
+    <string name="happy_graduation">تهانينا بالتخرج :)</string>
+
+</resources>

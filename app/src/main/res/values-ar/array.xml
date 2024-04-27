@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="card_sizes">
+        <item>صغير</item>
+        <item>متوسط</item>
+        <item>كبير</item>
+    </string-array>
+</resources>
